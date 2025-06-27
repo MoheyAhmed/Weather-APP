@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Api Session</title>
+    <link rel="shortcut icon" href="images/logo@2x.png" type="image/x-icon">
+    <title>Weather APP</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Comfortaa:wght@600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -13,8 +18,62 @@
 <body>
 
 
-    
+    <nav class="navbar navbar-expand-lg py-4" data-bs-theme="dark">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img class="w-25" src="images/logo@2x.png" alt="logo image">
+                <a class="navbar-brand ms-3" href="#">Weather APP</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="#">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="#">Live cameras</a>
+                    </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5" aria-current="page" href="#">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="search pt-4 pb-5 h-100">
+        <div class="container">
+            <form class="w-75 mx-auto py-5">
+                <input class="form-control form-control-lg bg-dark text-light rounded-pill"
+                    placeholder="Find Your Location" type="search" id="searchInput">
+            </form>
+        </div>
+    </section>
+
+
+
+    <section class="weather-template">
+        <div class="container">
+            <div class="row">
+                    
+            </div>
+        </div>
+    </section>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
