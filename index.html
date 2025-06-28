@@ -57,20 +57,79 @@
 
 
     <section class="search pt-4 pb-5 h-100">
-        <div class="container">
+        <div class="container pb-5">
             <form class="w-75 mx-auto py-5">
-                <input class="form-control form-control-lg bg-dark text-light rounded-pill"
-                    placeholder="Find Your Location" type="search" id="searchInput">
+                <input class="form-control form-control-lg text-light rounded-pill" placeholder="Find Your Location"
+                    type="search" id="searchInput">
             </form>
         </div>
     </section>
 
 
-
     <section class="weather-template">
         <div class="container">
-            <div class="row">
-                    
+            <div class="row g-0">
+                <div class="col-md-12 col-lg-4">
+                    <div class="todaycard text-light">
+                        <div class="card-tittle py-2 px-4 d-flex justify-content-between">
+                            <div>
+                                <h5 id="today_name" class="fs-6 fw-light">Day</h5>
+                            </div>
+
+                            <div class="d-flex">
+                                <h5 id="today_number" class="fs-6 fw-light me-2">Date</h5>
+                                <h5 id="today_month" class="fs-6 fw-light">month</h5>
+                            </div>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <h4 id="today_location" class="fs-6 mb-4"></h4>
+                            <h2  class="fs-1 mt-4 text-light"><span id="today_temp">Temp</span> <span><sup>o</sup>C</span></h2>
+                            <img id="today_img" src="images/113.png" alt="">
+                            <h4 id="today_condition" class="fs-4 mt-4">State</h4>
+                        </div>
+
+                        <div class="card-footer border-top  border-secondary  d-flex justify-content-around py-2">
+                            <div>
+                                <img src="images/icon-umberella.png" alt="">
+                                <span id="humadity" class="ms-2">20%</span>
+                            </div>
+                            <div>
+                                <img src="images/icon-wind.png" alt="">
+                                <span id="wind" class="ms-2">18km/h</span>
+                            </div>
+                            <div>
+                                <img src="images/icon-compass.png" alt="">
+                                <span id="wind_direction" class="ms-2">east</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="next-card text-light h-100">
+                        <div class="card-tittle text-center py-2 px-4">
+                            <h5  class="fs-6 fw-light tomorrow_date">Day</h5>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <img class="next_condition_img" src="images/113 (1).png" alt="">
+                            <h2  class="fs-2 mt-4 text-light"><span class="next_max_temp">Temp</span> <span><sup>o</sup>C</span></h2>
+                            <h2  class="fs-5 mt-4 text-light"><span class="next_min_temp">Temp</span> <span><sup>o</sup>C</span></h2>
+                            <h4  class="fs-6 mt-4 next_condition_text">State</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="lastcard text-light h-100">
+                        <div class="card-tittle text-center py-2 px-4">
+                            <h5  class="fs-6 fw-light tomorrow_date">Day</h5>
+                        </div>
+                        <div class="card-body text-center p-4">
+                            <img class="next_condition_img"  src="images/113 (1).png" alt="">
+                            <h2  class="fs-2 mt-4 text-light"><span class="next_max_temp">Temp</span> <span><sup>o</sup>C</span></h2>
+                            <h2  class="fs-5 mt-4 text-light"><span class="next_min_temp">Temp</span> <span><sup>o</sup>C</span></h2>
+                            <h4  class="fs-6 mt-4 next_condition_text">State</h4>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -79,3 +138,39 @@
 </body>
 
 </html>
+
+
+<!-- 
+
+<div class="col-md-12 col-lg-4">
+                    <div class="card">
+                        <div class="card-header border-0 d-flex justify-content-between align-items-center">
+                            <h6>day</h6>
+                            <h6>date</h6>
+                        </div>
+                        <div class="card-body">
+                            <h4>Country</h4>
+                            <h5 class="card-title text-white fs-1 h2">temp <sup>o</sup>C</h5>
+                            <div>
+                                <img src="images/113.png" alt="">
+                                <h6>state</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer border-0">
+                            <div class="state d-flex justify-content-around">
+                                <div>
+                                    <img src="images/icon-umberella.png" alt=""> <span>20%</span>
+                                </div>
+                                <div>
+                                    <img src="images/icon-wind.png" alt=""> <span>18km/h</span>
+                                </div>
+                                <div>
+                                    <img src="images/icon-compass.png" alt=""> <span>East</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>          
+
+
+-->

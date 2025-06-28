@@ -1,5 +1,7 @@
 :root{
-    --bg-background-primary : #1E202B
+    --bg-background-primary : #1E202B;
+    --bg-background-secondary : #323544;
+    --bg-background-trenary : #262936;
 }
 
 *{
@@ -8,11 +10,8 @@
     box-sizing: border-box;
 }
 
-body{
+body , input{
     font-family: Comfortaa, Arial !important;
-}
-
-nav{
     background-color: var(--bg-background-primary) !important;
 }
 
@@ -31,4 +30,34 @@ nav{
 .search input:focus{
     box-shadow: unset !important;
     border-color: unset !important;
+}
+
+.weather-template{
+    margin-top: -100px;
+}
+.weather-template .card-body{
+    color: #BFC1C8;
+}
+
+.todaycard{
+    background-color: var(--bg-background-secondary);
+    border-radius: 10px 0 0 10px;
+}
+.todaycard .card-tittle{
+    background-color: var(--bg-background-trenary);
+    border-radius: 10px 0 0 0 ;
+}
+.next-card{
+    background-color: var(--bg-background-trenary);
+}
+.next-card .card-tittle{
+    background-color: var(--bg-background-secondary);
+}
+.lastcard{
+    background-color: var(--bg-background-secondary);
+    border-radius: 0 0 10 10px;
+}
+.lastcard .card-tittle{
+    background-color: var(--bg-background-trenary);
+    border-radius: 0 10px 0 0 ;
 }
