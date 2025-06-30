@@ -22,7 +22,7 @@ body , input{
     background-size: cover;
 }
 .search input::placeholder{
-    color: #09c !important;
+    color: #a29292 !important;
     font-size: 20px !important;
     padding-left: 10px;
 }
