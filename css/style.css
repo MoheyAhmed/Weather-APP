@@ -1,63 +1,154 @@
-:root{
-    --bg-background-primary : #1E202B;
-    --bg-background-secondary : #323544;
-    --bg-background-trenary : #262936;
+:root {
+    --bg-background-primary: #1E202B;
+    --bg-background-secondary: #323544;
+    --bg-background-trenary: #262936;
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body , input{
+body,
+input {
     font-family: Comfortaa, Arial !important;
     background-color: var(--bg-background-primary) !important;
 }
 
-.search{
-    background-image: linear-gradient(rgba(0,0,0,0.3) , rgba(0,0,0,0.3) ) , url('../images/banner.png');
+
+.search {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/banner.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-.search input::placeholder{
+
+input::placeholder {
     color: #a29292 !important;
-    font-size: 20px !important;
+    font-size: 16px !important;
     padding-left: 10px;
 }
 
-.search input:focus{
+input:focus {
     box-shadow: unset !important;
     border-color: unset !important;
 }
 
-.weather-template{
+.weather-template {
     margin-top: -100px;
 }
-.weather-template .card-body{
+
+.weather-template .card-body {
     color: #BFC1C8;
 }
 
-.todaycard{
+.todaycard {
     background-color: var(--bg-background-secondary);
     border-radius: 10px 0 0 10px;
 }
-.todaycard .card-tittle{
+
+.todaycard .card-tittle {
     background-color: var(--bg-background-trenary);
-    border-radius: 10px 0 0 0 ;
+    border-radius: 10px 0 0 0;
 }
-.next-card{
+
+.next-card {
     background-color: var(--bg-background-trenary);
 }
-.next-card .card-tittle{
+
+.next-card .card-tittle {
     background-color: var(--bg-background-secondary);
 }
-.lastcard{
+
+.lastcard {
     background-color: var(--bg-background-secondary);
     border-radius: 0 0 10 10px;
 }
-.lastcard .card-tittle{
+
+.lastcard .card-tittle {
     background-color: var(--bg-background-trenary);
-    border-radius: 0 10px 0 0 ;
+    border-radius: 0 10px 0 0;
+}
+
+@media (max-width: 992px) {
+    .todaycard {
+        background-color: var(--bg-background-trenary);
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    .todaycard .card-tittle {
+        background-color: var(--bg-background-secondary);
+        border-radius: 10px 10px 0 0 !important;
+    }
+
+    .next-card {
+        background-color: var(--bg-background-trenary);
+        border-radius: 0px;
+    }
+
+    .next-card .card-tittle {
+        background-color: var(--bg-background-secondary);
+    }
+
+    .lastcard {
+        background-color: var(--bg-background-trenary);
+       border-radius:  0 0 10px 10px!important;
+    }
+
+    .lastcard .card-tittle {
+        background-color: var(--bg-background-secondary);
+        border-radius: 0 10px 0 0;
+    }
+}
+
+footer {
+    color: #BFC1C8 !important;
+    background-color: var(--bg-background-secondary);
+}
+
+footer .subscribe {
+    border: none;
+    background: #009ad8 !important;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+    right: 3px;
+}
+
+footer i {
+    transition: 0.5s;
+    cursor: pointer;
+    background-color: var(--bg-background-primary);
+    padding: 13px;
+}
+
+footer i:hover {
+    background-color: #009ad8 !important;
+    color: #fff !important;
+}
+
+
+
+/* ====================== Contact Page ======================== */
+
+nav .breadcrumb {
+    background: var(--bg-background-secondary);
+    border-radius: 40px;
+    padding: 20px 30px;
+    font-size: 13px;
+    font-size: 0.9285714286em;
+}
+
+nav .breadcrumb a{
+    text-decoration: none;
+    color: #BFC1C8;
+    transition: 0.5s;
+}
+nav .breadcrumb a:hover{
+    color: #a29292;
+}
+nav .breadcrumb li::before{
+    color: #BFC1C8 !important;
 }
