@@ -12,6 +12,7 @@
 
 body,
 input {
+    color: #BFC1C8;
     font-family: Comfortaa, Arial !important;
     background-color: var(--bg-background-primary) !important;
 }
@@ -24,16 +25,16 @@ input {
     background-size: cover;
 }
 
-input::placeholder {
+input::placeholder , textarea::placeholder{
     color: #a29292 !important;
-    font-size: 16px !important;
-    padding-left: 10px;
+    font-size: 15px !important;
+    padding-left: 8px;
 }
 
-input:focus {
+/* input:focus {
     box-shadow: unset !important;
     border-color: unset !important;
-}
+} */
 
 .weather-template {
     margin-top: -100px;
@@ -151,4 +152,12 @@ nav .breadcrumb a:hover{
 }
 nav .breadcrumb li::before{
     color: #BFC1C8 !important;
+}
+
+section .inner{
+    background-color: var(--bg-background-secondary);
+}
+
+section .contact-form .btn:hover{
+    background-color: var(--bg-background-secondary) !important;
 }
